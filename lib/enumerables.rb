@@ -61,4 +61,21 @@ class Array
         res
     end
 
+    # create zip, contains a lot of sub arrays. Put self into first sub array, 
+    # and additional arguments we put in the rest of the sub array. 
+
+    # arrs.flatten(1) 
+    def my_zip(*arrs)
+        zip = Array.new(self.length) {Array.new(array.length, nil)}
+        zip[0] = self
+        (1 .. self.length - 1).each do |index|
+            zip[index] = 
+        end
+
+        zip.each do |sub_array|
+            arrs.each do |ele| 
+
+            end
+        end
+    end
 end
